@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Global Styles */
+:root {
+  --primary-color: #fff;
+  --dark-color: #16181c;
+  --light-color: #e96500;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: var(--primary-color);
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+.month {
+  border: 1px solid var(--dark-color);
+  padding: 20px;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.users {
+  padding: 5px;
+  border-top: 2px solid var(--primary-color);
+  transition: opacity 0.5s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.month:hover > div {
+  height: auto;
+  opacity: 1;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  z-index: 1;
+  width: 100%;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+  color: var(--light-color);
+  background-color: var(--dark-color);
+}
